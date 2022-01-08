@@ -1,0 +1,90 @@
+@use 'side-nav-bar';
+@import url('https://css.gg/shopping-bag.css');
+@import url('https://css.gg/menu.css');
+
+
+.base-nav{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.site-nav{
+    ul {
+        @extend %list-styling-shared;
+        padding: 0;
+      }   
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item {
+    flex-grow: .2; 
+   
+  }
+
+
+.site-nav--mobile{
+    ul{
+        @extend %list-styling-shared;
+        // margin: 0;
+        padding: 0;
+    }
+}
+
+.center-text{
+    text-align: center;
+}
+
+.left-padding{
+    padding-left: 0.3rem;
+}
+
+
+@media only screen and (min-width: 880px){
+    .nav--mobile{
+        display: none;    
+    }
+     
+}
+
+@media only screen and (max-width: 880px){
+    .nav--desktop{
+            display: none;
+        }
+    
+        .nav--mobile{
+            align-items: center;
+            
+        }
+        
+    }
+
+
+.side-menu {
+    // position: fixed;
+    // box-sizing: border-box;
+    // z-index: 2;
+    // top: 0;
+    // left: 0;
+    // width: 80vw;
+    // height: 100vh;
+    // max-width: 440px;
+    // background-color: blue;
+    // // background-color: #fff;
+    // padding-left: 1.6rem;
+    // padding-top: 8rem;
+    // transform: translateX(-100%);
+    // transition: transform .6s cubic-bezier(.19, 1, .22, 1);
+}

@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+:root {
+    --container-padding: 1.4rem;
+  }
+
+$font-stack: "MaisonNeue-Mono","Maison Neue","IBM Plex Mono","Roboto Mono",monospace ;
+$primary-color: #333;
+
+
+// Source mixin
+@mixin make-container($padding-x: $container-padding-x) {
+    width: 100%;
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @include make-container(var(--container-padding));
+}
