@@ -18,15 +18,13 @@
 }  
 
 .slides::-webkit-scrollbar {
-     width: 0px;
+    width: 0px;
     height: 0px;
   }
 
 
 
 .slide-item {
-
-  
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 100%;
@@ -47,7 +45,7 @@
 
   @media only screen and (max-width: 880px){
     .slide-item {
-        max-height: 15rem;
+        max-height: 12rem;
     }
    
   

@@ -7,6 +7,7 @@
 
 $font-stack: "MaisonNeue-Mono","Maison Neue","IBM Plex Mono","Roboto Mono",monospace ;
 $primary-color: #333;
+$background: #fff;
 
 
 // Source mixin
@@ -26,5 +27,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: $background;
   @include make-container(var(--container-padding));
 }
+
+.pointer{
+    cursor: pointer;
+}
+

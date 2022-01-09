@@ -5,12 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    CarouselComponent
+    CarouselComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
