@@ -1,7 +1,4 @@
 .home-container{
-    // width: 90%;
-    // margin-right: auto;
-    // margin-left: auto;
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -17,3 +14,24 @@
         width: 48%;
     } 
 }
+
+.category-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    app-hero{
+        width: 31%;
+       
+    }
+}
+
+@media only screen and (max-width: 880px){
+ 
+        .category-section{
+           
+            app-hero{
+                width: 100%;
+               
+            }
+        }
+    }
