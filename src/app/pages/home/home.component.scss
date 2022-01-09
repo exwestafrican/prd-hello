@@ -1,0 +1,37 @@
+.home-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2.8rem;
+    padding: 3rem 0;
+}
+
+.campaign-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    app-hero{
+        width: 48%;
+    } 
+}
+
+.category-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    app-hero{
+        width: 31%;
+       
+    }
+}
+
+@media only screen and (max-width: 880px){
+ 
+        .category-section{
+           
+            app-hero{
+                width: 100%;
+               
+            }
+        }
+    }
